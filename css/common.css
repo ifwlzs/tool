@@ -1,0 +1,92 @@
+div {
+	border: 1px red solid;
+}
+
+.clearfloat {
+	zoom: 1;
+	/*适用ie6、7*/
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: " ";
+	visibility: hidden;
+	height: 0;
+	/*其他适用*/
+}
+
+.navigation {
+	width: 100%;
+	background-color: gray;
+	color: white;
+	font-size: 30px;
+}
+
+.navigation .navl {
+	float: left;
+	font-weight: bolder;
+}
+
+.navigation .navr {
+	float: right;
+}
+
+.navigation .navr a {
+	text-decoration: none;
+	color: bisque;
+}
+
+html,
+body {
+	height: 100%
+}
+
+a {
+	color: green;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:before {
+	color: gray;
+}
+
+a:hover {
+	text-decoration: none
+}
+
+.copyright {
+	font-size: 16px;
+	margin: 40px auto;
+}
+
+.canvas {
+	width: 90%;
+	margin: 20px auto;
+}
+
+textarea {
+	width: 100%;
+	word-break: break-all; //解决兼容问题
+	margin: 10px auto;
+}
+.btmargin
+{
+	margin-bottom: 1em;margin-top: 1em;
+}
+.bt1
+{
+	font-size: 20px;
+	margin-right: 2px;
+	background-color: #0074cc;
+	color: #fff;
+	font-weight: bold;
+}
+.bt2
+{
+	font-size: 20px;
+	background-color: #009688;
+	color: #fff;
+	font-weight: bold;
+}

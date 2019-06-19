@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>首页-MiniTool</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	</head>
+
+	<body>
+		<!--导航begin-->
+		<div class="navigation clearfloat">
+			<div class="navl">
+				MiniTool
+			</div>
+			<div class="navr">
+				<a href="index.html#t1">文本转换</a>
+				<a href="index.html#t2">时间工具</a>
+				<a href="index.html#t3">生活健康</a>
+				<a href="index.html#t4">科学计算</a>
+			</div>
+		</div>
+		<!--导航end-->
+		<!--整体框架begin-->
+		<div class="canvas">
+
+			<!--搜索引擎begin -->
+			<div id="">
+
+				<form name="search_form1" class="search_form1" target="_blank" onsubmit="return gowhere1(this)" style="vertical-align: middle; padding-top:  15px;border-radius: 35px;border: 1px solid #ccc;">
+					<table width="100%" height="100%" align="center" style="vertical-align: middle;">
+						<tr align="center">
+							<td valign="middle" width="100%" align="center">
+								<input checked="" name="myselect" onclick="javascript:this.form.value=0;" type="radio" value="0">
+								<font color="#000" style="font-SIZE: 20px;font-weight: bold;">百度</font>
+								<input name="myselect" onclick="javascript:this.form.myselectvalue.value=1;" type="radio" value="1">
+								<font color="#000" style="font-SIZE: 20px;font-weight: bold;">必应</font>
+								<input name="myselect" onclick="javascript:this.form.myselectvalue.value=2;" type="radio" value="2">
+								<font color="#000" style="font-SIZE: 20px;font-weight: bold;">夸克AI</font>
+								<input name="myselect" onclick="javascript:this.form.myselectvalue.value=3;" type="radio" value="3">
+								<font color="#000" style="font-SIZE: 20px;font-weight: bold;">SearX</font>
+								<input name="myselect" onclick="javascript:this.form.myselectvalue.value=4;" type="radio" value="4">
+								<font color="#000" style="font-SIZE:20px;font-weight: bold;">Yandex</font>
+								<input name="myselect" onclick="javascript:this.form.myselectvalue.value=5;" type="radio" value="5">
+								<font color="#000" style="font-SIZE: 20px;font-weight: bold;">Google</font>
+								<input name="myselect" onclick="javascript:this.form.myselectvalue.value=6;" type="radio" value="6">
+								<font color="#000" style="font-SIZE: 20px;font-weight: bold;">谷歌翻译</font>
+								<table align="center" width="100%">
+									<tbody>
+										<tr>
+											<td align="center">
+												<font style="font-SIZE: 12px">
+													<input id="q" name="q" type="text" placeholder="请输入要查找的关键词">
+												</font>
+												<input type="submit" value="GO" style="font-size:35px;background-color: rgba(255,255,255,.6); border-radius: 30px;">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</form>
+
+			</div>
+			<!--搜索引擎end   -->
+
+			<div class="links panel">
+				<div class="panel-body">
+					<dl class="row">
+						<a name="t1">
+							<div class="mytitle">文本转换</div>
+						</a>
+						<dd class="col-sm-3 col-md-2 col-xs-4">
+							<a href="/chinese.html" target="_blank">
+								<span class="link-title">中文简繁体转换</span>
+							</a>
+						</dd>
+						<dd class="col-sm-3 col-md-2 col-xs-4">
+							<a href="#" target="_blank">
+								<span class="link-title">工具名</span>
+							</a>
+						</dd>
+						<dd class="col-sm-3 col-md-2 col-xs-4">
+							<a href="#" target="_blank">
+								<span class="link-title">工具名</span>
+							</a>
+						</dd>
+						<dd class="col-sm-3 col-md-2 col-xs-4">
+							<a href="#" target="_blank">
+								<span class="link-title">工具名</span>
+							</a>
+						</dd>
+						<dd class="col-sm-3 col-md-2 col-xs-4">
+							<a href="#" target="_blank">
+								<span class="link-title">工具名</span>
+							</a>
+						</dd>
+					</dl>
+					<dl class="row">
+						<a name="t2">
+							<div class="mytitle">时间工具</div>
+						</a>
+						<dd class="col-sm-3 col-md-2 col-xs-4">
+							<a href="time.html" target="_blank">
+								<span class="link-title">北京时间</span>
+							</a>
+						</dd>
+						<dd class="col-sm-3 col-md-2 col-xs-4">
+							<a href="timeca.html" target="_blank">
+								<span class="link-title">日期计算器</span>
+							</a>
+						</dd>
+					</dl>
+					<dl class="row">
+						<a name="t3">
+							<div class="mytitle">生活健康</div>
+						</a>
+						<dd class="col-sm-3 col-md-2 col-xs-4">
+							<a href="#" target="_blank">
+								<span class="link-title">工具名</span>
+							</a>
+						</dd>
+					</dl>
+					<dl class="row">
+						<a name="t4">
+							<div class="mytitle">科学计算</div>
+						</a>
+						<dd class="col-sm-3 col-md-2 col-xs-4">
+							<a href="#" target="_blank">
+								<span class="link-title">工具名</span>
+							</a>
+						</dd>
+					</dl>
+				</div>
+
+			</div>
+		</div>
+
+		</div>
+		<!--整体框架end-->
+		<!--页脚 begin-->
+		<div class="copyright" align="center">
+			<a href="index.html">本站</a> 所有工具无需下载安装即可在线使用，使用工具需要您的浏览器支持HTML5。
+			<br /> 如果您有意见建议或推荐工具，请
+			<a href="#">联系我们！</a>
+		</div>
+		<!--页脚 end-->
+	</body>
+
+</html>
+<!--
+页面负责人：chc
+创作时间：2019-06-19
+实现功能：词条搜索，首页排版，整体框架
+-->

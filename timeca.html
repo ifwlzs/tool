@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>日期计算器-MiniTool</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/timeca.css" />
+		<script src="js/timeca.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	</head>
+	<body>
+		<!--导航begin-->
+		<div class="navigation clearfloat">
+			<div class="navl">
+				MiniTool
+			</div>
+			<div class="navr">
+				<a href="index.html#t1">文本转换</a>
+				<a href="index.html#t2">时间工具</a>
+				<a href="index.html#t3">生活健康</a>
+				<a href="index.html#t4">科学计算</a>
+			</div>
+		</div>
+		<!--导航end-->
+		<!--整体框架begin-->
+		<div class="canvas">
+			<h2>日期计算器</h2>
+		    <hr /> 
+		    <h2>计算日期差</h2>
+		    <p style="color:#458B74;text-align:center;"><input class="sr" id=SY2 type="number" pattern="\d*" value=2018 onFocus=OnEnter(this) onBlur=OnExit(this)> 年 <input class="sr"  id=SM2 type="number" pattern="\d*" value=8 onFocus=OnEnter(this) onBlur=OnExit(this)> 月 <input class="sr"  id=SD2 type="number" pattern="\d*" value=27 onFocus=OnEnter(this) onBlur=OnExit(this)> 日 </p>
+			<p style="color:#458B74;text-align:center;">和</p>
+			<p style="color:#458B74;text-align:center;line-height:30px;"><input id=SY3 class="sr"  type="number" pattern="\d*" value=2019 onFocus=OnEnter(this) onBlur=OnExit(this)> 年 <input id=SM3 class="sr"  type="number" pattern="\d*" value=8 onFocus=OnEnter(this) onBlur=OnExit(this)> 月 <input id=SD3 class="sr"  type="number" pattern="\d*" value=8 onFocus=OnEnter(this) onBlur=OnExit(this)> 日 </p>
+			<p style="color:#4169E1;text-align:center;">相差：
+			<span style="color:#EE0000;" id=result2></span>天</p>
+			<p style="color:#CD4F39;text-align:center;"><input class="anniu" type=button value="计算日期" onClick="calb()"></p>
+		    <hr />  
+		    <h2>计算前后日期</h2>
+		    <p style="color:#458B74;text-align:center;line-height:30px;"><input class="sr" id=SY type="number" pattern="\d*" value=2018 onFocus=OnEnter(this) onBlur=OnExit(this)> 年 <input class="sr" size=4 id=SM type="number" pattern="\d*" value=10 onFocus=OnEnter(this) onBlur=OnExit(this)> 月 <input class="sr" size=4 id=SD type="number" pattern="\d*" value=27 onFocus=OnEnter(this) onBlur=OnExit(this)>日 </p>
+			<p style="color:#4169E1;text-align:center;line-height:30px;">相差</p>
+			<p style="color:#458B74;text-align:center;line-height:30px;"><input class="sr" size=8 id=decday type="number" pattern="\d*" value=100 onFocus=OnEnter(this) onBlur=OnExit(this)> 天 </p>
+			<p style="color:#CD3700;text-align:center;line-height:30px;">天数输入负数向前计算</p>
+			<p style="color:#4169E1;text-align:center;line-height:30px;">是：<span style="color:#EE0000;" id=result1></span></p>
+			<p style="color:#4169E1;text-align:center;line-height:30px;"><input class="anniu" type=button value="计算日期" onClick="cala()"></p>
+		    <hr />
+			<p class="pxsales pxtweb">日期计算器的计算日期差功能可以计算距离某个日子还差多少天，一般用于计算高考，节日，重要个人纪念日还有多久到达。计算几天后的日期功能可以帮您优化管理个人日程，作息时间，工作计划等。</p>
+		    <hr />
+		</div>
+		<!--整体框架end-->
+		<!--页脚 begin-->
+		<div class="copyright" align="center">
+			<a href="index.html">本站</a> 所有工具无需下载安装即可在线使用，使用工具需要您的浏览器支持HTML5。
+			<br /> 如果您有意见建议或推荐工具，请
+			<a href="#">联系我们！</a>
+		</div>
+		<!--页脚 end-->
+	</body>
+
+</html>
+<!--
+页面负责人：wyk
+创作时间：2019-06-19
+实现功能：日期计算
+-->

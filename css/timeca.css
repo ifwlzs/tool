@@ -1,0 +1,19 @@
+.sr
+{
+	border: 1px solid #ddd;
+	padding:5px;
+	font-family: "Work Sans", sans-serif;
+	outline: none;
+}
+
+.content p
+{
+	line-height:
+	1!important;
+}
+
+.canvas h2
+{
+	text-align: center;
+	color:#666666;
+}
