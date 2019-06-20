@@ -3,13 +3,13 @@
 
 	<head>
 		<meta charset="utf-8" />
-		<title>#-MiniTool</title>
+		<title>Base64编码-MiniTool</title>
 		<!--公共样式-->
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<!--单页样式-->
 		<link rel="stylesheet" type="text/css" href="#" />
 		<!--当前页面所用js-->
-		<script src="#" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base64.js" type="text/javascript" charset="utf-8"></script>
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	</head>
 
@@ -29,16 +29,19 @@
 		<!--导航end-->
 		<!--整体框架begin-->
 		<div class="canvas">
-			<h3>功能标题</h3>
-			<textarea id="texta1" name="texta1" cols="" rows="15">这是一个例子</textarea>
+			<h3>Base64编码</h3>
+			<textarea id="texta1" rows="15" cols="">这是一个例子</textarea>
 			<br />
 			<div class="btmargin">
 				<center>
-					<button class="bt1" onclick="">编码</button>
-					<button class="bt2" onclick="">解码</button>
+					<button class="bt1" onclick="doEncode();">>>编码</button>
+					<label><input type="checkbox" value="hex" id="opt1" />编码结果以ASCII码16进制显示</label>
+					<br />
+					<button class="bt2" onclick="doDecode();">>>解码</button>
+					<label><input type="checkbox" value="hex" id="opt2" />解码结果以ASCII码16进制显示</label>
 				</center>
 			</div>
-			<textarea id="texta2" name="texta2" cols="" rows="15"></textarea>
+			<textarea id="texta2" rows="15" cols=""></textarea>
 		</div>
 		<!--整体框架end-->
 		<!--页脚 begin-->
