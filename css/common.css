@@ -1,8 +1,6 @@
-/*
-div {
+/*div {
 	border: 1px red solid;
-}
-*/
+}*/
 
 .clearfloat {
 	zoom: 1;
@@ -91,4 +89,8 @@ textarea {
 	background-color: #009688;
 	color: #fff;
 	font-weight: bold;
+}
+h1,h2,h3
+{
+	text-align: center;
 }

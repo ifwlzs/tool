@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>进制转换器-MiniTool</title>
+		<!--公共样式-->
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<!--单页样式-->
+		<link rel="stylesheet" type="text/css" href="#" />
+		<!--当前页面所用js-->
+		<script src="js/jinzhi.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	</head>
+
+	<body>
+		<!--导航begin-->
+		<div class="navigation clearfloat">
+			<div class="navl">
+				MiniTool
+			</div>
+			<div class="navr">
+				<a href="index.html#t1">文本转换</a>
+				<a href="index.html#t2">时间工具</a>
+				<a href="index.html#t3">生活健康</a>
+				<a href="index.html#t4">科学计算</a>
+			</div>
+		</div>
+		<!--导航end-->
+		<!--整体框架begin-->
+		<div class="canvas">
+			<h1 align="center">进制转换器</h1>
+			<hr />
+			<p style="text-align:center;">
+				<select id="any_hex_in" style="width: 80px;">
+					<script>
+						t = "";
+						for(x = 64; x > 1; x--) {
+							t += "<option value=" + x + ">" + x + "进制</option>";
+						}
+						document.write(t);
+					</script>
+				</select>
+				<input type="text" id="any_input" alt="N进制数" title="N进制数" style="width: 180px;" value="" />
+			</p>
+			<p style="text-align:center;">
+				<input type="button" class="bt1" onclick="convert('any_hex_in', 'any_input', 'any_hex_out', 'any_output');" value="转换" />
+			</p>
+			<p style="text-align:center;">
+				<select id="any_hex_out" style="width: 80px;">
+					<script>
+						t = "";
+						for(x = 64; x > 1; x--) {
+							t += "<option value=" + x + ">" + x + "进制</option>";
+						}
+						document.write(t);
+					</script>
+				</select>
+				<input type="text" id="any_output" alt="N进制数" title="N进制数" style="width: 180px;" value="" /></p>
+			</form>
+			<hr />
+			<p class="pxsales pxtweb">本进制转换器支持二进制到六十四进制的相互转换，如16进制转10进制，2进制转10进制，可自由选择使用。</p>
+			<hr />
+
+		</div>
+		<!--整体框架end-->
+		<!--页脚 begin-->
+		<div class="copyright" align="center">
+			<a href="index.html">本站</a> 所有工具无需下载安装即可在线使用，使用工具需要您的浏览器支持HTML5。
+			<br /> 如果您有意见建议或推荐工具，请
+			<a href="#">联系我们！</a>
+		</div>
+		<!--页脚 end-->
+	</body>
+
+</html>
+<!--
+页面负责人：chc(记得修改!!!)
+创作时间：2019-06-19
+实现功能：模板
+-->
