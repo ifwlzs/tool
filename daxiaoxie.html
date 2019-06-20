@@ -3,13 +3,13 @@
 
 	<head>
 		<meta charset="utf-8" />
-		<title>Base64编码-MiniTool</title>
+		<title>数字大写转换器-MiniTool</title>
 		<!--公共样式-->
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<!--单页样式-->
 		<link rel="stylesheet" type="text/css" href="#" />
 		<!--当前页面所用js-->
-		<script src="js/base64.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/daxiaoxie.js" type="text/javascript" charset="utf-8"></script>
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	</head>
 
@@ -29,19 +29,24 @@
 		<!--导航end-->
 		<!--整体框架begin-->
 		<div class="canvas">
-			<h1 align="center">Base64编码</h1>
-			<textarea id="texta1" rows="15" cols="">这是一个例子</textarea>
-			<br />
-			<div class="btmargin">
-				<center>
-					<button class="bt1" onclick="doEncode();">>>编码</button>
-					<label><input type="checkbox" value="hex" id="opt1" />编码结果以ASCII码16进制显示</label>
-					<br />
-					<button class="bt2" onclick="doDecode();">>>解码</button>
-					<label><input type="checkbox" value="hex" id="opt2" />解码结果以ASCII码16进制显示</label>
-				</center>
-			</div>
-			<textarea id="texta2" rows="15" cols=""></textarea>
+			<h1 align="center">数字大写转换器</h1>
+			<hr />
+			<h3 align="center">输入小写数字</h3>
+			<p class="is-3" style="text-align:center;">
+				小写数字：
+				<input name="Digits" type="text" id="Digits" class="input2" onfocus="this.className=&#39;inputtext-bor&#39;" onblur="this.className=&#39;inputtext&#39;" value="123" size="40">
+				<br><br>大写数字：
+				<input name="Result" type="text" class="input2" id="Result" size="40">
+				<br>
+				<br>
+				<input id="Convert" type="button" class="bt1" value="转换为大写数字" name="Convert" onclick="Result.value = convertCurrency(Digits.value);">
+			</p>
+			<hr />
+			<h3 align="center">大写数字一到十</h3>
+			<p style="text-align:center;color:#228B22;font-size:1.5em">壹 贰 叁 肆 伍 陆 柒 捌 玖 拾</p>
+			<p style="text-align:center;">大写数字是我国为防止防止数目被涂改，利用与数字同音的汉字取代数字的书写方式。</p>
+			<hr />
+
 		</div>
 		<!--整体框架end-->
 		<!--页脚 begin-->
