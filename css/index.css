@@ -1,7 +1,7 @@
 @media only screen and (max-width:420px) {
 	#q {
-		width: 60%;
-		font-size: 25px;
+		width: 50%;
+		font-size: 20px;
 		border-radius: 15px;
 		padding-left: 15px;
 	}
@@ -9,7 +9,8 @@
 
 @media only screen and (max-width: 800px) {
 	#q {
-		font-size: 26px;
+		width: 60%;
+		font-size: 24px;
 		border-radius: 30px;
 		padding-left: 20px;
 	}
