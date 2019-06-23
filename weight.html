@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="93xo.ox39@gmail.com" />
+		<meta name="robots" content="none" />
+		<title>身高预测_儿童身高计算器</title>
+		<!--公共样式-->
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<!--单页样式-->
+		<link rel="stylesheet" type="text/css" href="#" />
+		<!--当前页面所用js-->
+		<script src="js/weight.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<style>
+			.container {
+				display: grid;
+				grid-gap: 10px;
+				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+				width: 80%;
+			}
+			
+			.element {
+				text-align: center;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--导航begin-->
+		<div class="navigation clearfloat">
+			<div class="navl">
+				MiniTool
+			</div>
+			<div class="navr">
+				<a href="index.html#t1">文本转换</a>
+				<a href="index.html#t2">时间工具</a>
+				<a href="index.html#t3">生活健康</a>
+				<a href="index.html#t4">科学计算</a>
+			</div>
+		</div>
+		<!--导航end-->
+		<!--整体框架begin-->
+
+		<script>
+			if(screen && screen.width > 375) {
+				document.write('<div><script type="text/javascript" src="https://t.aies.cn/ad/aiestop.js"><\/script></div>');
+			}
+		</script>
+
+		<article class="content">
+			<h1 class="title is-3">身高预测</h1>
+			<hr />
+			<h3 class="title is-3">儿童身高计算</h3>
+
+			<form name="cal" class="text-align:center;">
+				<p style="color:#458B74;text-align:center;"><label class="lab">父亲身高：</label><input type="text" maxlength="3" onkeyup="setKeyup(this)" id="wfhei" value="" class="th" />厘米(CM)</p>
+				<p style="color:#458B74;text-align:center;"><label class="lab">母亲身高：</label><input type="text" maxlength="3" onkeyup="setKeyup(this)" id="wmhei" value="" class="th" />厘米(CM)</p>
+				<p style="color:#458B74;text-align:center;"><label class="lab">儿童性别：</label><input type="radio" id="wcsex1" name="wcsex" checked="">男 <input type="radio" id="wcsex0" name="wcsex">女</p>
+				<p style="color:#458B74;text-align:center;"><input type="button" name="btn1" value=" 开始计算 " onclick="handleWork(this);" class="gbtn" /> <button onClick="document.location.reload()">重新计算</button></form>
+			</p>
+
+			<p style="color:#458B74;text-align:center;">测试结果：<span id="wtext"></span></p>
+			<hr />
+			<p style="color:#458B74;text-align:center;">我们不能确切地知道孩子长大后的具体身高，但通过计算公式儿童身高还是可以计算出来的。根据计算结果，可以评估孩子的成长发育是否正常。
+				<a href="bztz.html">身高体重比例表</a>
+			</p>
+			<hr />
+		</article>
+		
+		</div>
+		</div>
+		</div>
+		</section>
+		<script type="text/javascript">
+			function handleBegin() {
+				r_state = 2;
+			}
+		</script>
+		
+		
+		<!--整体框架end-->
+		<!--页脚 begin-->
+		<div class="copyright" align="center">
+			<a href="index.html">本站</a> 所有工具无需下载安装即可在线使用，使用工具需要您的浏览器支持HTML5。
+			<br /> 如果您有意见建议或推荐工具，请
+			<a href="#">联系我们！</a>
+		</div>
+		<!--页脚 end-->
+	</body>
+
+</html>
+<!--
+页面负责人：jcj
+创作时间：2019-06-19
+实现功能：模板
+-->
