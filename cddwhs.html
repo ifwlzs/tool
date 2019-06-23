@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="93xo.ox39@gmail.com" />
+		<meta name="robots" content="none" />
+		<title>#-MiniTool</title>
+		<!--公共样式-->
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<!--单页样式-->
+		<link rel="stylesheet" type="text/css" href="css/cddwhs.css" />
+		<!--当前页面所用js-->
+		<script type="text/javascript" src="js/cddwhs.js"></script>
+	</head>
+
+	<body>
+		<!--导航begin-->
+		<div class="navigation clearfloat">
+			<div class="navl">
+				MiniTool
+			</div>
+			<div class="navr">
+				<a href="index.html#t1">文本转换</a>
+				<a href="index.html#t2">时间工具</a>
+				<a href="index.html#t3">生活健康</a>
+				<a href="index.html#t4">科学计算</a>
+			</div>
+		</div>
+		<!--导航end-->
+		<!--整体框架begin-->
+		<div class="canvas">
+			<h1>长度单位换算</h1>
+			<hr />
+			<form>
+				<div class="clearfloat">
+					<div class="element">
+						<p style="text-align:center;">公里
+							<input size="15" name="mKilometer">
+							<input class="bt1" onclick="if (checkNum(mKilometer.value)) compute(this.form,mKilometer.name,length_data)" value="换算" type="button" name="mKilometer_bt">
+						</p>
+						<p style="text-align:center;">米&nbsp;&nbsp;&nbsp;&nbsp;
+							<input size="15" name="mMeter">
+							<input class="bt1" onclick="if (checkNum(mMeter.value)) compute(this.form,mMeter.name,length_data)" value="换算" type="button" name="mMeter_bt">
+						</p>
+						<p style="text-align:center;">分米
+							<input size="15" name="mDecimeter">
+							<input class="bt1" onclick="if (checkNum(mDecimeter.value)) compute(this.form,mDecimeter.name,length_data)" value="换算" type="button" name="mDecimeter_bt">
+						</p>
+						<p style="text-align:center;">厘米
+							<input size="15" name="mCentimeter">
+							<input class="bt1" onclick="if (checkNum(mCentimeter.value)) compute(this.form,mCentimeter.name,length_data)" value="换算" type="button" name="mCentimeter_bt">
+						</p>
+						<p style="text-align:center;">毫米
+							<input size="15" name="mMillimeter">
+							<input class="bt1" onclick="if (checkNum(mMillimeter.value)) compute(this.form,mMillimeter.name,length_data)" value="换算" type="button" name="mMillimeter_bt">
+						</p>
+						<p style="text-align:center;">微米
+							<input size="15" name="mMicronmeter">
+							<input class="bt1" onclick="if (checkNum(mMicronmeter.value)) compute(this.form,mMicronmeter.name,length_data)" value="换算" type="button" name="mMicronmeter_bt">
+						</p>
+						<p style="text-align:center;">里&nbsp;&nbsp;&nbsp;&nbsp;
+							<input size="15" name="mLimeter">
+							<input class="bt1" onclick="if (checkNum(mLimeter.value)) compute(this.form,mLimeter.name,length_data)" value="换算" type="button" name="mLimeter_bt">
+						</p>
+						<p style="text-align:center;">丈&nbsp;&nbsp;&nbsp;&nbsp;
+							<input size="15" name="mZhangmeter">
+							<input class="bt1" onclick="if (checkNum(mZhangmeter.value)) compute(this.form,mZhangmeter.name,length_data)" value="换算" type="button" name="mZhangmeter_bt">
+						</p>
+						<p style="text-align:center;">尺&nbsp;&nbsp;&nbsp;&nbsp;
+							<input size="15" name="mChimeter">
+							<input class="bt1" onclick="if (checkNum(mChimeter.value)) compute(this.form,mChimeter.name,length_data)" value="换算" type="button" name="mChimeter_bt">
+						</p>
+						<p style="text-align:center;">寸&nbsp;&nbsp;&nbsp;&nbsp;
+							<input size="15" name="mCunmeter">
+							<input class="bt1" onclick="if (checkNum(mCunmeter.value)) compute(this.form,mCunmeter.name,length_data)" value="换算" type="button" name="mCunmeter_bt">
+						</p>
+					</div>
+					<div class="element">
+						<p style="text-align:center;">分&nbsp;&nbsp;&nbsp;&nbsp;
+							<input size="15" name="mFenmeter">
+							<input class="bt1" onclick="if (checkNum(mFenmeter.value)) compute(this.form,mFenmeter.name,length_data)" value="换算" type="button" name="mFenmeter_bt">
+						</p>
+						<p style="text-align:center;">厘&nbsp;&nbsp;&nbsp;&nbsp;
+							<input size="15" name="mmLimeter">
+							<input class="bt1" onclick="if (checkNum(mmLimeter.value)) compute(this.form,mmLimeter.name,length_data)" value="换算" type="button" name="mmLimeter_bt">
+						</p>
+						<p style="text-align:center;">海里
+							<input size="15" name="nautMile">
+							<input class="bt1" onclick="if (checkNum(nautMile.value)) compute(this.form,nautMile.name,length_data)" value="换算" type="button" name="nautMile_bt">
+						</p>
+						<p style="text-align:center;">英寻
+							<input size="15" name="nautFathom">
+							<input class="bt1" onclick="if (checkNum(nautFathom.value)) compute(this.form,nautFathom.name,length_data)" value="换算" type="button" name="nautFathom_bt">
+						</p>
+						<p style="text-align:center;">英里
+							<input size="15" name="engMile">
+							<input class="bt1" onclick="if (checkNum(engMile.value)) compute(this.form,engMile.name,length_data)" value="换算" type="button" name="engMile_bt">
+						</p>
+						<p style="text-align:center;">弗隆
+							<input size="15" name="engFurlong">
+							<input class="bt1" onclick="if (checkNum(engFurlong.value)) compute(this.form,engFurlong.name,length_data)" value="换算" type="button" name="engFurlong_bt">
+						</p>
+						<p style="text-align:center;">码&nbsp;&nbsp;&nbsp;&nbsp;
+							<input size="15" name="engYard">
+							<input class="bt1" onclick="if (checkNum(engYard.value)) compute(this.form,engYard.name,length_data)" value="换算" type="button" name="engYard_bt">
+						</p>
+						<p style="text-align:center;">英尺
+							<input size="15" name="engFoot">
+							<input class="bt1" onclick="if (checkNum(engFoot.value)) compute(this.form,engFoot.name,length_data)" value="换算" type="button" name="engFoot_bt">
+						</p>
+						<p style="text-align:center;">英寸
+							<input size="15" name="engInch">
+							<input class="bt1" onclick="if (checkNum(engInch.value)) compute(this.form,engInch.name,length_data)" value="换算" type="button" name="engInch_bt">
+						</p>
+					</div>
+				</div>
+
+				<hr />
+				<center>
+					<input value="数据重置" type="reset" class="bt2" </center>
+			</form>
+		</div>
+		<!--整体框架end-->
+		<!--页脚 begin-->
+		<div class="copyright" align="center">
+			<a href="index.html">本站</a> 所有工具无需下载安装即可在线使用，使用工具需要您的浏览器支持HTML5。
+			<br /> 如果您有意见建议或推荐工具，请
+			<a href="#">联系我们！</a>
+		</div>
+		<!--页脚 end-->
+		
+	</body>
+
+</html>
+<!--
+页面负责人：dzx
+创作时间：2019-06-19
+实现功能：模板
+-->

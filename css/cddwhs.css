@@ -1,0 +1,39 @@
+.cm {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.element {
+	float: left;
+	text-align: center;
+}
+
+@media only screen and (max-width:420px) {
+	.element {
+		margin-left: 15%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.element {
+		margin-left: 5%;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	.element {
+		margin-left: 10%;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.element {
+		margin-left: 18%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.element {
+		margin-left: 25%;
+	}
+}
